@@ -1,0 +1,46 @@
+<testsuite failures="0" name="koala/src/test/resources/features/koala.feature" skipped="0" tests="3" time="34.512003">
+  <testcase classname="koala.src.test.resources.features.koala" name="reuse section" time="10.116232">
+    <system-out>Given driver 'http://www.seleniumeasy.com/test/' .......................... passed
+And waitFor("//*[@id=\'at-cv-lightbox-button-holder\']/a[2]") ............. passed
+And click("//*[@id=\'at-cv-lightbox-button-holder\']/a[2]") ............... passed
+And waitFor("//a[@class='dropdown-toggle'][contains(text(),'List Box')]") . passed
+And click("//a[@class='dropdown-toggle'][contains(text(),'List Box')]") ... passed</system-out>
+  </testcase>
+  <testcase classname="koala.src.test.resources.features.koala" name="01 Test three drop-down options after clicking Progress Bar tab" time="9.65728">
+    <system-out>Given driver 'http://www.seleniumeasy.com/test/' .......................... passed
+And waitFor("//*[@id=\'at-cv-lightbox-button-holder\']/a[2]") ............. passed
+And click("//*[@id=\'at-cv-lightbox-button-holder\']/a[2]") ............... passed
+And waitFor("//a[@class='dropdown-toggle'][contains(text(),'List Box')]") . passed
+And click("//a[@class='dropdown-toggle'][contains(text(),'List Box')]") ... passed
+Given driver 'http://www.seleniumeasy.com/test/' .......................... passed
+* def res = call read('koala.feature@reuse') .............................. passed
+Then def elements = locateAll("//li[@class='dropdown open']//ul[@class='dropdown-menu']//li") . passed
+And def sizeElements = karate.sizeOf(elements) ............................ passed
+And match sizeElements == 3 ............................................... passed
+Then print 'dropdown elements are 3' ...................................... passed</system-out>
+  </testcase>
+  <testcase classname="koala.src.test.resources.features.koala" name="02 bootstrap listbox" time="14.738491">
+    <system-out>Given driver 'http://www.seleniumeasy.com/test/' .......................... passed
+And waitFor("//*[@id=\'at-cv-lightbox-button-holder\']/a[2]") ............. passed
+And click("//*[@id=\'at-cv-lightbox-button-holder\']/a[2]") ............... passed
+And waitFor("//a[@class='dropdown-toggle'][contains(text(),'List Box')]") . passed
+And click("//a[@class='dropdown-toggle'][contains(text(),'List Box')]") ... passed
+Given driver 'http://www.seleniumeasy.com/test/' .......................... passed
+* def res = call read('koala.feature@reuse') .............................. passed
+Then def elements = locateAll("//li[@class='dropdown open']//ul[@class='dropdown-menu']//li") . passed
+And def sizeElements = karate.sizeOf(elements) ............................ passed
+And match sizeElements == 3 ............................................... passed
+Then print 'dropdown elements are 3' ...................................... passed
+Given driver 'http://www.seleniumeasy.com/test/' .......................... passed
+* def res = call read('koala.feature@reuse') .............................. passed
+And waitFor("//ul[@class='dropdown-menu']//a[contains(text(),'Bootstrap List Box')]") . passed
+And click("//ul[@class='dropdown-menu']//a[contains(text(),'Bootstrap List Box')]") . passed
+And click("//li[contains(text(),'bootstrap-duallist')]") .................. passed
+And click("//div[@class='well text-right']//li[@class='list-group-item'][contains(text(),'Dapibus ac facilisis in')]") . passed
+And click("//div[@class='list-arrows col-md-1 text-center']/descendant::button[@class='btn btn-default btn-sm move-right']") . passed
+And exists("//div[@class='well']/descendant::ul[@class='list-group']//li[contains(text(),'bootstrap-duallist')]") . passed
+Then print 'Bootstrap listbox shifted' .................................... passed
+And exists("//li[@class='list-group-item active'][contains(text(),'Dapibus ac facilisis in')]") . passed
+Then print 'Dapibus ac facislislis shifted' ............................... passed</system-out>
+  </testcase>
+</testsuite>

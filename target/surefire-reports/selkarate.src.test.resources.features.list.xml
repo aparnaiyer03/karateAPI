@@ -1,0 +1,8 @@
+<testsuite failures="0" name="selkarate/src/test/resources/features/list.feature" skipped="0" tests="1" time="0.476592">
+  <testcase classname="selkarate.src.test.resources.features.list" name="listbox tab" time="0.476592">
+    <system-out>Given url 'http://www.seleniumeasy.com/test/' ............................. passed
+When method get ........................................................... passed
+Then response.length == 3 ................................................. passed
+Then print " number of dropdown values in listbox tab ", response.length .. passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,109 @@
+<testsuite failures="4" name="src/test/resources/features/sample.feature" skipped="0" tests="4" time="16.656751">
+  <testcase classname="src.test.resources.features.sample" name="testing get for users" time="4.393152">
+    <failure message="sample.feature:5 - &#10;org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information">Given url 'http://localhost:3000/posts' ................................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: sample.feature:5 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information&#13;
+	at ✽.When method get (sample.feature:5)&#13;
+
+And response.length==1 .................................................... skipped
+Then print 'total users count: ',response.length .......................... skipped</failure>
+  </testcase>
+  <testcase classname="src.test.resources.features.sample" name="update one user" time="4.134715">
+    <failure message="sample.feature:13 - &#10;org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information">Given url 'http://localhost:3000/posts' ................................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: sample.feature:5 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information&#13;
+	at ✽.When method get (sample.feature:5)&#13;
+
+And response.length==1 .................................................... skipped
+Then print 'total users count: ',response.length .......................... skipped
+Given url 'http://localhost:3000/posts/22' ................................ passed
+When request {author: "A" ,title: "Dallas" } .............................. passed
+And method put ............................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: sample.feature:13 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information&#13;
+	at ✽.And method put (sample.feature:13)&#13;
+
+Then print 'updated value: ', response .................................... skipped</failure>
+  </testcase>
+  <testcase classname="src.test.resources.features.sample" name="Create a new user" time="4.062672">
+    <failure message="sample.feature:19 - &#10;org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information">Given url 'http://localhost:3000/posts' ................................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: sample.feature:5 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information&#13;
+	at ✽.When method get (sample.feature:5)&#13;
+
+And response.length==1 .................................................... skipped
+Then print 'total users count: ',response.length .......................... skipped
+Given url 'http://localhost:3000/posts/22' ................................ passed
+When request {author: "A" ,title: "Dallas" } .............................. passed
+And method put ............................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: sample.feature:13 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information&#13;
+	at ✽.And method put (sample.feature:13)&#13;
+
+Then print 'updated value: ', response .................................... skipped
+Given url 'http://localhost:3000/posts' ................................... passed
+When request {id: 900,author: "AJ Flynn" ,title: "Gone girl"} ............. passed
+And method post ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: sample.feature:19 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information&#13;
+	at ✽.And method post (sample.feature:19)&#13;
+
+Then print 'new user is : ', response ..................................... skipped</failure>
+  </testcase>
+  <testcase classname="src.test.resources.features.sample" name="delete" time="4.066213">
+    <failure message="sample.feature:25 - &#10;org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information">Given url 'http://localhost:3000/posts' ................................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: sample.feature:5 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information&#13;
+	at ✽.When method get (sample.feature:5)&#13;
+
+And response.length==1 .................................................... skipped
+Then print 'total users count: ',response.length .......................... skipped
+Given url 'http://localhost:3000/posts/22' ................................ passed
+When request {author: "A" ,title: "Dallas" } .............................. passed
+And method put ............................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: sample.feature:13 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information&#13;
+	at ✽.And method put (sample.feature:13)&#13;
+
+Then print 'updated value: ', response .................................... skipped
+Given url 'http://localhost:3000/posts' ................................... passed
+When request {id: 900,author: "AJ Flynn" ,title: "Gone girl"} ............. passed
+And method post ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: sample.feature:19 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information&#13;
+	at ✽.And method post (sample.feature:19)&#13;
+
+Then print 'new user is : ', response ..................................... skipped
+Given url 'http://localhost:3000/posts/900' ............................... passed
+When method delete ........................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: sample.feature:25 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:3000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information&#13;
+	at ✽.When method delete (sample.feature:25)&#13;
+
+Then status 204 ........................................................... skipped</failure>
+  </testcase>
+</testsuite>
